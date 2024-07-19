@@ -35,7 +35,7 @@ export default function Layout({
       <body
         className={`text-[#E9ECEF] bg-[#0F1113] ${golosText.className}`}
       >
-        <main className="flex min-h-screen flex-col items-center justify-center p-[5%] short:justify-start">
+        <main className="flex min-h-[100svh] flex-col items-center justify-center p-[5%] short:justify-start">
           {children}
         </main>
         <Background />
