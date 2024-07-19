@@ -1,0 +1,11 @@
+{
+  "hiHRs": "Hi HRs!",
+  "description": "Hey, I'm guessing you're here because I sent you that link to my CV? Well, here you go, there are some useful links about me linked up.",
+  "thanksForAttention": "Thanks for your attention!",
+  "myResume": {
+    "title": "My CV",
+    "description": "One-page document about me"
+  },
+  "github": "GitHub",
+  "dmMe": "DM me!"
+}

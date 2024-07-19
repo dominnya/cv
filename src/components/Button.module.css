@@ -1,0 +1,28 @@
+.transition {
+  transition: border-color 0.2s, background-position 0.2s;
+}
+
+.transition:hover {
+  transition: border-color 0.2s, background-position 0.2s;
+}
+
+.forward {
+  background-image: url("/icons/forward.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+}
+
+.forward:hover {
+  background-position: right 1rem center;
+}
+
+.active {
+  border-color: #166534;
+  background-color: #15803d;
+}
+
+.active:hover {
+  border-color: #4ade80;
+}
