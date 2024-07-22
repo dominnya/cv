@@ -15,6 +15,10 @@
   background-color: #15803d;
 }
 
+.active * {
+  opacity: 1 !important;
+}
+
 @media (hover: hover) {
   .hover:hover {
     border-color: rgba(233, 236, 239, 0.25);

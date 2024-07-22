@@ -39,7 +39,7 @@ export function Button({
       {iconName && (
         <img
           src={`/icons/${iconName}.svg`}
-          alt={iconName}
+          alt={`${iconName} icon`}
           className="absolute top-4 right-4 w-8 h-8"
         />
       )}
