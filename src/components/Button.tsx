@@ -1,5 +1,3 @@
-"use client";
-
 import type { PropsWithChildren } from "react";
 import styles from "./Button.module.css";
 import { Heading } from "./Heading";
