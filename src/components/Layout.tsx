@@ -7,7 +7,7 @@ import { useParams } from "next/navigation";
 import type { ReactNode } from "react";
 
 const golosText = Golos_Text({
-  display: "auto",
+  display: "swap",
   subsets: ["cyrillic", "latin"],
 });
 
