@@ -1,7 +1,6 @@
 "use client";
 import "@/app/globals.css";
 import { Background } from "@/components/Background";
-import { LanguageSwitch } from "@/components/LanguageSwitch";
 import { dir } from "i18next";
 import { Golos_Text } from "next/font/google";
 import { useParams } from "next/navigation";
@@ -23,13 +22,12 @@ export function Layout({
   return (
     <html lang={lang} dir={dir(lang)}>
       <body
-        className={`text-[#E9ECEF] bg-[#0F1113] ${golosText.className}`}
+        className={`text-foreground bg-background ${golosText.className}`}
       >
         <main className="flex min-h-[100svh] flex-col items-center justify-center p-[5%] short:justify-start">
           {children}
         </main>
         <Background />
-        <LanguageSwitch lang={lang} />
       </body>
     </html>
   );

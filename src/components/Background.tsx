@@ -46,7 +46,7 @@ export function Background() {
       `}</style>
       <div
         suppressHydrationWarning
-        className="h-full w-full bg-emerald-600/[.25] lg:opacity-30 opacity-50"
+        className="h-full w-full bg-blob/[.25] lg:opacity-30 opacity-50"
         style={{
           clipPath: `polygon(${poly})`,
         }}

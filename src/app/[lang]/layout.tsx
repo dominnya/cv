@@ -1,4 +1,5 @@
 import { languages } from "@/app/i18n/settings";
+import { LanguageSwitch } from "@/components/LanguageSwitch";
 import type { ReactNode } from "react";
 
 export async function generateStaticParams() {
@@ -7,8 +8,17 @@ export async function generateStaticParams() {
 
 export default function Layout({
   children,
+  params,
 }: Readonly<{
   children: ReactNode;
+  params: {
+    lang: string;
+  };
 }>) {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <LanguageSwitch lang={params.lang} />
+    </>
+  );
 }

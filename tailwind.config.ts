@@ -7,6 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      subtle: "#1b1d20",
+      foreground: "#e9ecef",
+      background: "#0f1113",
+      blob: "#059669",
+    },
     backgroundPosition: {
       "right-6": "right 1.5rem center",
     },

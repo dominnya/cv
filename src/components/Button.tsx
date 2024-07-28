@@ -27,7 +27,7 @@ export function Button({
     <a
       target="_blank"
       href={href}
-      className={`${styles.hover} ${styles.transition} bg-right-6 ${hasForwardIcon ? styles.forward : ""} relative btn border bg-[#1B1D20]/[.40] border-[#0F1113]/[.30] rounded-2xl p-4 pr-12 w-full flex flex-col justify-end backdrop-blur-3xl select-none cursor-pointer ${isActive ? styles.active : ""} ${className}`}
+      className={`${styles.hover} ${styles.transition} bg-right-6 ${hasForwardIcon ? styles.forward : ""} relative btn border bg-subtle/[.40] border-background/[.30] rounded-2xl p-4 pr-12 w-full flex flex-col justify-end backdrop-blur-3xl select-none cursor-pointer ${isActive ? styles.active : ""} ${className}`}
       rel="noreferrer"
     >
       <Heading className="text-xl leading-none">{title}</Heading>
