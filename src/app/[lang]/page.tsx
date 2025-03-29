@@ -3,18 +3,16 @@ import { Button } from "@/components/Button";
 import { Heading } from "@/components/Heading";
 import { Paragraph } from "@/components/Paragraph";
 
-export default async function Home(
-  props: Readonly<{
-    params: {
-      lang: string;
-    };
-  }>,
-) {
-  const params = await props.params;
-
-  const { lang } = params;
-
+export default async function Home({
+  params,
+}: Readonly<{
+  params: Promise<{
+    lang: string;
+  }>;
+}>) {
+  const { lang } = await params;
   const { t } = await useTranslation(lang, "home");
+
   return (
     <div className="w-full h-full max-w-[50rem] flex flex-col gap-10 items-center justify-center lg:flex-row">
       <div className="flex flex-col gap-5 select-none max-w-[27.5rem] lg:max-w-[20rem]">
