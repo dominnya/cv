@@ -3,13 +3,17 @@ import { Button } from "@/components/Button";
 import { Heading } from "@/components/Heading";
 import { Paragraph } from "@/components/Paragraph";
 
-export default async function Home({
-  params: { lang },
-}: Readonly<{
-  params: {
-    lang: string;
-  };
-}>) {
+export default async function Home(
+  props: Readonly<{
+    params: {
+      lang: string;
+    };
+  }>,
+) {
+  const params = await props.params;
+
+  const { lang } = params;
+
   const { t } = await useTranslation(lang, "home");
   return (
     <div className="w-full h-full max-w-[50rem] flex flex-col gap-10 items-center justify-center lg:flex-row">
@@ -21,7 +25,7 @@ export default async function Home({
       <div className="w-full flex flex-col gap-4 min-h-[12.25rem] max-w-[27.5rem]">
         <Button
           // href={`/resume/${lang}.pdf`}
-          href={`/resume/cv.pdf`}
+          href="/resume/cv.pdf"
           className="grow"
           title={t("myResume.title")}
           hasForwardIcon

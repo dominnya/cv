@@ -6,15 +6,18 @@ export async function generateStaticParams() {
   return languages.map(lng => ({ lng }));
 }
 
-export default function Layout({
-  children,
-  params,
-}: Readonly<{
-  children: ReactNode;
-  params: {
-    lang: string;
-  };
-}>) {
+export default async function Layout(
+  props: Readonly<{
+    children: ReactNode;
+    params: {
+      lang: string;
+    };
+  }>,
+) {
+  const params = await props.params;
+
+  const { children } = props;
+
   return (
     <>
       {children}
