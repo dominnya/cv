@@ -20,7 +20,8 @@ export default async function Home({
       </div>
       <div className="w-full flex flex-col gap-4 min-h-[12.25rem] max-w-[27.5rem]">
         <Button
-          href={`/resume/${lang}.pdf`}
+          // href={`/resume/${lang}.pdf`}
+          href={`/resume/cv.pdf`}
           className="grow"
           title={t("myResume.title")}
           hasForwardIcon
