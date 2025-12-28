@@ -4,8 +4,8 @@
 
 A sleek, tiny & modern personal portfolio website to showcase my CV.
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.3-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
@@ -37,10 +37,8 @@ A sleek, tiny & modern personal portfolio website to showcase my CV.
 ### ⚡ Performance & DX
 
 - Built on **Next.js 15** with App Router architecture
-- **Turbopack** enabled for lightning-fast development builds
 - **React 19** with Server Components for optimal performance
 - **Static Site Generation (SSG)** for blazing-fast page loads
-- **Biome** for unified linting with shared configuration
 
 ### 🔗 Social Integration
 
@@ -73,7 +71,7 @@ cd cv
 # Install dependencies
 bun install
 
-# Start development server (with Turbopack)
+# Start development server
 bun dev
 ```
 
