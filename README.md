@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# ✨ CV Portfolio
 
-First, run the development server:
+A sleek, tiny & modern personal portfolio website to showcase my CV.
+
+[![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+
+</div>
+
+---
+
+## 🚀 Features
+
+### 🌍 Internationalization (i18n)
+
+- **Multi-language support** with English and Russian translations
+- Smart **language detection** via `Accept-Language` headers
+- **Cookie-based** language persistence for returning visitors
+- Seamless **language switching** component with flag indicators
+- URL-based routing (`/en`, `/ru`) for better SEO
+
+### 🎨 Modern UI/UX
+
+- **Animated blob background** with dynamic, morphing shapes using clip-path animations
+- **Glassmorphism design** with backdrop blur effects and semi-transparent cards
+- **Custom dark theme** with carefully crafted color palette:
+  - Background: `#0f1113`
+  - Foreground: `#e9ecef`
+  - Accent blob: `#059669` (emerald green)
+- **Golos Text** font from Google Fonts with Cyrillic & Latin support
+- **Responsive layout** optimized for all screen sizes including short viewports
+
+### ⚡ Performance & DX
+
+- Built on **Next.js 15** with App Router architecture
+- **Turbopack** enabled for lightning-fast development builds
+- **React 19** with Server Components for optimal performance
+- **Static Site Generation (SSG)** for blazing-fast page loads
+- **Biome** for unified linting with shared configuration
+
+### 🔗 Social Integration
+
+- Direct links to **GitHub** profile
+- **Telegram** DM button for quick contact
+- **Downloadable CV** (PDF) with one click
+
+### 🛠️ Technical Highlights
+
+- **Middleware-based routing** for automatic language detection and redirects
+- **CSS Modules** for scoped, maintainable styles
+- **RTL support** ready via i18next `dir()` function
+- Type-safe with **full TypeScript** coverage
+- Modular **component architecture** (Button, Heading, Paragraph, etc.)
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Bun (recommended)
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Clone the repository
+git clone https://github.com/dominnya/cv.git
+cd cv
+
+# Install dependencies
+bun install
+
+# Start development server (with Turbopack)
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Adding a New Language
 
-## Learn More
+1. Add the locale code to `src/app/i18n/settings.ts`:
 
-To learn more about Next.js, take a look at the following resources:
+   ```ts
+   export const languages = ["en", "ru", "de"]; // Add your locale
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Create translation files in `src/app/i18n/locales/{lang}/`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Add the flag emoji in `common.json`
 
-## Deploy on Vercel
+### Modifying Theme Colors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Edit `tailwind.config.ts` to customize the color palette:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```ts
+colors: {
+  subtle: "#1b1d20",
+  foreground: "#e9ecef",
+  background: "#0f1113",
+  blob: "#059669", // Change accent color
+}
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
