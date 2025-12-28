@@ -32,7 +32,7 @@ export default async function Home({
         </Button>
         <div className="flex gap-4 grow">
           <Button
-            href="https://github.com/domin-mnd"
+            href="https://github.com/dominnya"
             className="grow"
             title={t("github")}
             iconName="github"
