@@ -11,6 +11,7 @@ export default async function Home({
   }>;
 }>) {
   const { lang } = await params;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(lang, "home");
 
   return (
